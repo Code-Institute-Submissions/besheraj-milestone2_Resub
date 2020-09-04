@@ -13,6 +13,100 @@
 </head>
 
 <body>
+    <header class="container-fluid">
+        <div class="no-gutters">
+            <div class="row">
+                <div class="col-md-8 logo">
+                    <h1>Rock Paper Scissor</h1>
+                </div>
+
+                <div class="col-md-3 offset-md-1 menu">
+
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <button class="navbar-toggler ml-auto nav-bg-color" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span></button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mr-auto ">
+                                <li class="active nav-item mr-2"><a class="nav-link" href="index.html"><span>Play
+                                            Now</span></a></li>
+                                <li class="active nav-item mr-2"><a class="nav-link" href="#how-to"><span>How to
+                                            Play</span></a></li>
+                                <li class="active nav-item mr-2"><a class="nav-link" href="#send-message"><span>Help
+                                        </span></a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container-fluid game-played">
+        <div class="no-gutters">
+            <div class="raw">
+                <div class="col">
+                    <h1 class="game-heading">Lets Play!</h1>
+                </div>
+                <div class="col">
+                    <h3 class="game-heading">Round: <span id="rounds">1</span></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="computer-choice center col">
+                    <h3 class="user-choice-heading">Computer Choice:</h3>
+                    <p id="computer-choice"> ? </p>
+                </div>
+                <div class="user-choice center col">
+                    <form>
+                        <label class="user-choice-heading">
+                            Your Choices:
+                        </label>
+
+                        <div class="form-check choices">
+                            <input class="form-check-input" type="radio" name="choices" id="rock" value="rock">
+                            <label class="form-check-label" for="rock">
+                                Rock
+                            </label>
+                        </div>
+                        <div class="form-check choices">
+                            <input class="form-check-input" type="radio" name="choices" id="paper" value="paper">
+                            <label class="form-check-label" for="paper">
+                                Paper
+                            </label>
+                        </div>
+                        <div class="form-check choices">
+                            <input class="form-check-input" type="radio" name="choices" id="scissors" value="scissors">
+                            <label class="form-check-label" for="scissors">
+                                Scissors
+                            </label>
+                        </div>
+                        <button class="play-button btn btn-success" type="button" onclick="playGame()">play</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col center">
+                <p class="score">Computer Score: <span id="cscore">0</span></p>
+            </div>
+            <div class="col center">
+                <p class="score">User Score: <span id="uscore">0</span></p>
+            </div>
+
+        </div>
+        <div class="row ">
+            <div class="col results center">
+                <p class="score-label">Summary: <br> <span id="result"></span></p>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+    <footer></footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

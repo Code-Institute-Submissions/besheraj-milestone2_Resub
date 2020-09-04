@@ -51,3 +51,28 @@ const determineWinner = (userChoice, computerChoice) => {
         }
     }
 };
+// game played when click throw will take user choice then generate computer choice determine 
+// the winner update the score for winner and advance by one round //
+const playGame = () => {
+    const userChoice = document.querySelector('input[name="choices"]:checked').value;
+    const computerChoice = getComputerChoice();
+    const winner = determineWinner(userChoice, computerChoice);
+
+    const updateScore = () => {
+        if (winner === 'The Computer Won!') {
+            computerScore++;
+        } else if (winner === 'You Won!') {
+            humanScore++;
+        }
+    };
+    const advanceRound = () => currentRoundNumber++;
+
+    document.getElementById("result").innerHTML = '<div class="summary"> ' + determineWinner(userChoice, computerChoice) + '</div>';
+    updateScore();
+    
+    displaycomputerchoice.innerText = computerChoice;
+    displaycomputerScore.innerText = computerScore;
+    displayhumanScore.innerText = humanScore;
+    displaycurrentRoundNumber.innerText = currentRoundNumber;
+    advanceRound();
+};
