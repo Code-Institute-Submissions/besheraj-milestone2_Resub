@@ -10,6 +10,13 @@
         type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Rock Paper Scissor</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_xm47l1ExyXOanCyGgbOhU");
+        })();
+    </script>
 </head>
 
 <body>
@@ -140,8 +147,32 @@
         </div>
     </section>
     <!-- contact form section  -->
-    <section></section>
-    <!-- footer  -->
+    <section class="container-fluid contact-form">
+        <div class="row px-lg-5">
+            <div class="col">
+                <a id="send-message">
+                    <h2 class="heading  text-center">
+                        Send Us a Message
+                    </h2>
+                </a>
+                <div class="center-form">
+                    <form onsubmit="return sendMail()">
+                        <input type="text" name="name" id="name" class="form-control" placeholder= "Name"
+                            required>
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
+                            required>
+                        <textarea rows="5" name="msg" id="msg" class="form-control" placeholder="Your Message" required>
+                </textarea>
+
+                        <button type="submit" class="btn btn-secondary btn-style">
+                            <span>Send Now!</span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>    <!-- footer  -->
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -153,6 +184,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="assets/js/game.js"></script>
+    <script src="assets/js/send-email.js"></script>
+
 </body>
 
 </html>

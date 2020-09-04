@@ -51,7 +51,7 @@ const determineWinner = (userChoice, computerChoice) => {
         }
     }
 };
-// game played when click throw will take user choice then generate computer choice determine 
+//when game played selecting user choice then generate computer choice determine 
 // the winner update the score for winner and advance by one round //
 const playGame = () => {
     const userChoice = document.querySelector('input[name="choices"]:checked').value;
@@ -69,7 +69,7 @@ const playGame = () => {
 
     document.getElementById("result").innerHTML = '<div class="summary"> ' + determineWinner(userChoice, computerChoice) + '</div>';
     updateScore();
-    
+
     displaycomputerchoice.innerText = computerChoice;
     displaycomputerScore.innerText = computerScore;
     displayhumanScore.innerText = humanScore;

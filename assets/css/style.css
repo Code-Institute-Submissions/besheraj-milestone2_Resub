@@ -153,3 +153,22 @@ header span {
     padding-left: 20px;
     color: #595758;
 }
+/* contact form  */
+.contact-form {
+    padding: 50px;
+    text-align: center;
+    background-color: #e295cf;
+
+}
+.contact-form h4 {
+    padding: 15px;
+}
+.contact-form botton {
+    margin: 15px;
+}
+.form-control {
+    margin-bottom: 10px;
+}
+.btn-secondary {
+    background-color: #e295cf;
+}
