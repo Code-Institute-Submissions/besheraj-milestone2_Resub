@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+body {
+    font-family: 'Grandstander',Times, serif
+
+}
+header {
+    margin: 0 ;
+    background-color: #CDD6DD;
+    padding-top: 5px;
+}
+.logo {
+    float: left;
+    padding-left: 20px; 
+}
+
+.logo h1  {
+    font-weight: 500;
+    color: #CD8987;
+    font-size: 2rem;
+    font-family: 'Press Start 2P',Times, serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+header span {
+    font-size: 17px;
+    color: #CD8987;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+
+}
+.nav-bg-color {
+    background: #CD8987
+}
+.menu nav {
+    padding: 0;
+}
+/* Game Styling */
+
+.computer-choice-box {
+    height: 300px;
+    width: 180px;
+    border: 1px #595758 solid;
+    border-radius: 10px;
+}
+.user-choice {
+    height: 300px;
+    width: 180px;
+    border: 1px #595758 solid;
+    border-radius: 10px;
+
+}
+
+.game-heading {
+    text-align: center;
+    padding: 20px 40px;
+    font-weight: 1300px;
+    color: #595758;
+}
+
+.user-choice-heading {
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #595758;
+
+}
+.choices {
+    margin: 10px 0;
+    font-weight: 500;
+    color: #595758;
+
+}
+.play-button {
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+}
+#computer-choice {
+    margin: 50px 0;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    color: #595758;
+
+}
+.results {
+    text-align: center;
+    border: 1px #CDD6DD inset;
+    border-radius: 10px; 
+    height: 80px;
+    color: #595758;
+
+}
+.summary {
+
+    color: #12263A;
+
+    
+}
+.score-label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #595758;
+
+}
+.score {
+    font-weight: bold;
+    color: #595758;
+
+}
+.game-played {
+    background-image: url('../images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.center {
+    text-align: center;
+}
