@@ -125,7 +125,31 @@ header span {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+    height: 90vh;
 }
 .center {
     text-align: center;
+}
+/* how to play  */
+.how-to {
+    background-color: rgba(236, 156, 193, 0.815);
+    padding: 30px;
+}
+.how-to h1 {
+    padding-top: 50px;
+    color: #595758;
+
+}
+.how-to h3 {
+    padding: 20px;
+    color: #595758;
+
+}
+.how-to p {
+    padding: 20px;
+    color: #595758;
+}
+.how-to li {
+    padding-left: 20px;
+    color: #595758;
 }
