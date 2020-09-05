@@ -1,39 +1,55 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Interactive Frontend Development Milestone "Rock Paper Scissors" Project:
+Rock Paper Scissors project is game developed to entertain users and have great expeience with round and winning score counting, the game developed for one user to select a choice against the computer version.
+this project could be used to entertain users, promoting or ads, the design is fully responsive and works on every mobile tablet or desktop.
 
-Welcome USER_NAME,
+# UX
+**as a user:**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+ability to play the game with the computer.
+counting the winning score for both user and computer.
+counting rounds of each time you play.
+ability to learn about the game.
+email form to send a message or report a problem.
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Wireframes:
+The wireframes designed by Balsamiq tool, link to wireframes!
 
-`python3 -m http.server`
+# Features:
+## Existing Features:
+Navigation menu bar that linked to different sections in the website.
+The menu bar will switch to a button that collapse in the mobile and tablet version.
+Sticky menu bar with the logo while surfing the whole page.
+documentation about the game and how to play it.
+ability to play the game and the round and winning score change every time played.
+ability to send an email to talk about the game experience or report a problem
 
-A blue button should appear to click: *Make Public*,
+# Technology Used:
+## Languages:
+HTML5, CSS3, Javascript
 
-Another blue button should appear to click: *Open Browser*.
+## Frameworks:
+Bootstrap:
+The responsive griding design.
+Collapse button for menu bar in mobile version.
+## Balsamiq:
+Designed the wireframes.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## VSCode:
+This whole project code written using VScode.
 
-A blue button should appear to click: *Make Public*,
+## Github:
+The whole project commited and pushed to github repository and published on Github pages.
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+# Testing:
+..
 
-## Updates Since The Instructional Video
+# Responsive
+The design was tested on the following devices: Desktop Laptop Iphone 6/7/8 Galaxy Fold Iphone 5/SE Galaxy S5 Pixel 2 Pixel 2 XL Iphone 6/7/8 plus Iphone X IPad pro Surface Duo
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+# Deployment
+The site was deployed to GitHub pages by following the below steps: Log in to the repository - https://github.com/besheraj/milestone2 Click Settings Scroll down to GitHub Pages Set Source to Branch:master Click Save
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+# Credits
+background image downloaded from https://www.vecteezy.com

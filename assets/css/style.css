@@ -14,6 +14,8 @@ header {
     margin: 0 ;
     background-color: #CDD6DD;
     padding-top: 5px;
+    position: fixed;
+
 }
 .logo {
     float: left;

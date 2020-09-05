@@ -1,7 +1,7 @@
 var templateParams = {
-    from_name: document.getElementById("name").value,
-    Email: document.getElementById("emailaddress").value,
-    message: document.getElementById("msg").value
+    from_name: document.getElementById("name").toString,
+    Email: document.getElementById("emailaddress").toString,
+    message: document.getElementById("msg").toString
 };
 function sendMail() {
 emailjs.send('gmail', 'template_besheraj', templateParams)
