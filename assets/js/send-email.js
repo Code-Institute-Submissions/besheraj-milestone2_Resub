@@ -1,12 +1,16 @@
-var templateParams = {
-    from_name: document.getElementById("name").toString,
-    Email: document.getElementById("emailaddress").toString,
-    message: document.getElementById("msg").toString
-};
 function sendMail() {
+    var templateParams = {
+        from_name: document.getElementById("name").value,
+        Email: document.getElementById("emailaddress").value,
+        message: document.getElementById("msg").value
+    };
+
 emailjs.send('gmail', 'template_besheraj', templateParams)
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+       alert('Your message has been sent.')
+       document.getElementById("name").value=""
+       document.getElementById("msg").value=""
+       document.getElementById("emailaddress").value=""
     }, function(error) {
        console.log('FAILED...', error);
     }); return false; }
