@@ -14,7 +14,6 @@ header {
     margin: 0 ;
     background-color: #CDD6DD;
     padding-top: 5px;
-    position: fixed;
 
 }
 .logo {
@@ -28,7 +27,6 @@ header {
     font-size: 2rem;
     font-family: 'Press Start 2P',Times, serif;
     letter-spacing: 4px;
-    text-transform: uppercase;
 }
 header span {
     font-size: 17px;
@@ -62,9 +60,17 @@ header span {
 
 .game-heading {
     text-align: center;
-    padding: 20px 40px;
     font-weight: 1300px;
     color: #595758;
+    padding-top: 50px;
+    letter-spacing: 3px;
+}
+.round-heading {
+    text-align: center;
+    font-weight: 1300px;
+    color: #595758;
+    padding: 40px;
+    text-decoration: underline;
 }
 
 .user-choice-heading {
@@ -98,7 +104,7 @@ header span {
     text-align: center;
     border: 1px #CDD6DD inset;
     border-radius: 10px; 
-    height: 80px;
+    height: 120px;
     color: #595758;
 
 }
@@ -117,7 +123,7 @@ header span {
 .score {
     font-weight: bold;
     color: #595758;
-
+    text-decoration: underline;
 }
 .game-played {
     background-image: url('../images/wallpaper.jpg');
@@ -127,7 +133,7 @@ header span {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 90vh;
+
 }
 .center {
     text-align: center;
@@ -173,4 +179,15 @@ header span {
 }
 .btn-secondary {
     background-color: #e295cf;
+}
+/* footer styling  */
+footer {
+  margin: 0 ;
+  background-color: #CDD6DD;
+}
+hr {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
 }

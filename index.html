@@ -60,7 +60,7 @@
                     <h1 class="game-heading">Lets Play!</h1>
                 </div>
                 <div class="col">
-                    <h3 class="game-heading">Round: <span id="rounds">1</span></h1>
+                    <h3 class="round-heading">Round: <span id="rounds">1</span></h1>
                 </div>
             </div>
             <div class="row">
@@ -150,18 +150,17 @@
     <section class="container-fluid contact-form">
         <div class="row px-lg-5">
             <div class="col">
-                    <h2 class="heading  text-center">
-                        Send Us a Message
-                    </h2>
-                    <div class="col">
-                        <h4>Tell us about your experience or if your having any problem</h4>
-                    </div>
+                <h2 class="heading  text-center">
+                    Send Us a Message
+                </h2>
+                <div class="col">
+                    <h4>Tell us about your experience or if your having any problem</h4>
+                </div>
                 <div class="center-form">
                     <form onsubmit="return sendMail()">
-                        <input type="text" name="name" id="name" class="form-control" placeholder= "Name"
-                            required>
-                        <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email"
-                            required>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                        <input type="email" name="emailaddress" id="emailaddress" class="form-control"
+                            placeholder="Email" required>
                         <textarea rows="5" name="msg" id="msg" class="form-control" placeholder="Your Message" required>
                 </textarea>
 
@@ -173,8 +172,32 @@
                 </div>
             </div>
         </div>
-    </section>    <!-- footer  -->
-    <footer></footer>
+    </section> <!-- footer  -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 offset-md-9 menu">
+                <hr>
+                <nav class="navbar navbar-dark navbar-expand-lg">
+                    <button class="navbar-toggler ml-auto nav-bg-color" type="button" data-toggle="collapse"
+                        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mr-auto ">
+                            <li class="active nav-item mr-2"><a class="nav-link" href="index.html"><span>Play
+                                        Now</span></a></li>
+                            <li class="active nav-item mr-2"><a class="nav-link" href="#how-to"><span>How to
+                                        Play</span></a></li>
+                            <li class="active nav-item mr-2"><a class="nav-link" href="#send-message"><span>Help
+                                    </span></a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
