@@ -20,31 +20,33 @@ const getUserChoice = userInput => {
 const getComputerChoice = () => {
     const randomNumber = Math.floor(Math.random() * 3);
     switch (randomNumber) {
-        case 0: return 'Rock'
-        case 1: return 'Paper'
-        case 2: return 'Scissors'
+        case 0: return 'rock'
+        case 1: return 'paper'
+        case 2: return 'scissors'
     }
 }
 // decide the winner //
 const determineWinner = (userChoice, computerChoice) => {
-    if (userChoice === computerChoice) { return 'The Game is a tie' }
+    if (userChoice === computerChoice) {
+        return 'The Game is a tie'
+    }
 
     if (userChoice === 'rock') {
-        if (computerChoice === 'Paper') {
+        if (computerChoice === 'paper') {
             return 'The Computer Won!';
         } else {
             return 'You Won!';
         }
     }
     if (userChoice === 'paper') {
-        if (computerChoice === 'Scissors') {
+        if (computerChoice === 'scissors') {
             return 'The Computer Won!';
         } else {
             return 'You Won!'
         }
     }
     if (userChoice === 'scissors') {
-        if (computerChoice === 'Rock') {
+        if (computerChoice === 'rock') {
             return 'The Computer Won!';
         } else {
             return 'You Won!'
@@ -54,7 +56,7 @@ const determineWinner = (userChoice, computerChoice) => {
 //when game played selecting user choice then generate computer choice determine 
 // the winner update the score for winner and advance by one round //
 const playGame = () => {
-    const userChoice = document.querySelector('input[name="choices"]:checked').value;
+        const userChoice = document.querySelector('input[name="choices"]:checked').value;
     const computerChoice = getComputerChoice();
     const winner = determineWinner(userChoice, computerChoice);
 
