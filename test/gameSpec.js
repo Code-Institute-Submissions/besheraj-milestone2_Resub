@@ -61,10 +61,20 @@ describe("Game", function () {
             getUserChoice(userChoice)
             expect(console.log).toHaveBeenCalledWith('Error!');
         });
-        // it ("should return increasing the computer score by 1", function(){
-        //     let userChoice='scissors'
-        //     expect(playGame(userChoice)).toBe('The Game is a tie');
-        // });
+        it ("should return update userscore", function(){
+            let computerChoice='scissors'
+            let userChoice='scissors'
+            expect(determineWinner(userChoice, computerChoice)).toBe('The Game is a tie');
+        });
+        it ("should return increasing the computer score by 1 & human to be 0", function(){
+            let scores = updateScore('The Computer Won!');
+            expect(scores.computerScore).toBe(1);
+            expect(scores.humanScore).toBe(0); 
+        });
 
+        it ("round should be increased by 1", function(){
+            advanceRound()
+            expect(currentRoundNumber).toBe(2);
+        });
     });
 });

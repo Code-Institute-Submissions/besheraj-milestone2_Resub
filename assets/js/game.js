@@ -53,28 +53,31 @@ const determineWinner = (userChoice, computerChoice) => {
         }
     }
 };
+// advance one round each time the game played
+const advanceRound = () => currentRoundNumber++;
+
+// update the score for winner
+const updateScore = (winner) => {
+    if (winner === 'The Computer Won!') {
+        computerScore++;
+    } else if (winner === 'You Won!') {
+        humanScore++;
+    }
+    return { humanScore, computerScore };
+};
+
 //when game played selecting user choice then generate computer choice determine 
 // the winner update the score for winner and advance by one round //
 const playGame = () => {
-        const userChoice = document.querySelector('input[name="choices"]:checked').value;
+    const userChoice = document.querySelector('input[name="choices"]:checked').value;
     const computerChoice = getComputerChoice();
     const winner = determineWinner(userChoice, computerChoice);
-
-    const updateScore = () => {
-        if (winner === 'The Computer Won!') {
-            computerScore++;
-        } else if (winner === 'You Won!') {
-            humanScore++;
-        }
-    };
-    const advanceRound = () => currentRoundNumber++;
-
-    document.getElementById("result").innerHTML = '<div class="summary"> ' + determineWinner(userChoice, computerChoice) + '</div>';
-    updateScore();
+    let scores = updateScore(winner)
+    document.getElementById("result").innerHTML = '<div class="summary"> ' + winner + '</div>';
 
     displaycomputerchoice.innerText = computerChoice;
-    displaycomputerScore.innerText = computerScore;
-    displayhumanScore.innerText = humanScore;
+    displaycomputerScore.innerText = scores.computerScore;
+    displayhumanScore.innerText = scores.humanScore;
     displaycurrentRoundNumber.innerText = currentRoundNumber;
     advanceRound();
 };
