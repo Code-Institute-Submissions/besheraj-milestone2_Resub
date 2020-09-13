@@ -137,7 +137,7 @@ header span {
 /* how to play  */
 .how-to {
     background-color: rgba(236, 156, 193, 0.815);
-    padding: 100px;
+    padding: 100px 20px;
 }
 .how-to h1 {
     padding-top: 50px;
@@ -159,7 +159,7 @@ header span {
 }
 /* contact form  */
 .contact-form {
-    padding: 120px;
+    padding: 120px 20px;
     text-align: center;
     background-color: #e295cf;
 
@@ -167,8 +167,8 @@ header span {
 .contact-form h4 {
     padding: 15px;
 }
-.contact-form botton {
-    margin: 15px;
+.contact-form button {
+    margin-top: 25px;
 }
 .form-control {
     margin-bottom: 10px;
@@ -189,26 +189,27 @@ hr {
 }
 
 .social {
-    padding-bottom: 10px;
     text-align: center;
 
 }
+
 .social li {
     padding: 10px 50px;
 
 }
-.social ul li {
-    margin-top: 10px
-}
+
 
 .social li a i  {
 
-    padding: 12px 0;
+    padding: 15px 0;
     font-size: 30px;
     line-height: 7px;
     text-align: center;
-    color: #530631;
+    color: #CD8987;
 }
 .social li a i:hover {
     color: #12263A;
+}
+ul {
+    margin: 0;
 }
