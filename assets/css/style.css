@@ -60,14 +60,14 @@ header span {
 
 .game-heading {
     text-align: center;
-    font-weight: 1300px;
+    font-weight: 900;
     color: #595758;
     padding-top: 50px;
     letter-spacing: 3px;
 }
 .round-heading {
     text-align: center;
-    font-weight: 1300px;
+    font-weight: 700;
     color: #595758;
     padding: 40px;
     text-decoration: underline;
@@ -128,10 +128,6 @@ header span {
 .game-played {
     background-image: url('../images/wallpaper.jpg');
     background-repeat: no-repeat;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
     background-size: cover;
 
 }
@@ -141,7 +137,7 @@ header span {
 /* how to play  */
 .how-to {
     background-color: rgba(236, 156, 193, 0.815);
-    padding: 30px;
+    padding: 100px;
 }
 .how-to h1 {
     padding-top: 50px;
@@ -163,7 +159,7 @@ header span {
 }
 /* contact form  */
 .contact-form {
-    padding: 50px;
+    padding: 120px;
     text-align: center;
     background-color: #e295cf;
 
@@ -181,13 +177,38 @@ header span {
     background-color: #e295cf;
 }
 /* footer styling  */
+
 footer {
-  margin: 0 ;
-  background-color: #CDD6DD;
+    background-color: #CDD6DD;
 }
 hr {
     width: 100%;
     padding: 0;
     margin: 0;
 
+}
+
+.social {
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+.social li {
+    padding: 10px 50px;
+
+}
+.social ul li {
+    margin-top: 10px
+}
+
+.social li a i  {
+
+    padding: 12px 0;
+    font-size: 30px;
+    line-height: 7px;
+    text-align: center;
+    color: #530631;
+}
+.social li a i:hover {
+    color: #12263A;
 }
