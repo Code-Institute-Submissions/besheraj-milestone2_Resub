@@ -1,5 +1,6 @@
 # Interactive Frontend Development Milestone 2 "Rock Paper Scissors" Project:
-Rock Paper Scissors project is popular and old game created to entertain users playing against the computer, both user and computer score will increase when one of them win, when the game is a tie nothing changes, to keep it more interesting there is a round count.
+Rock Paper Scissors project is popular and old game created to entertain users playing against the computer, both user and computer score will increase when one of them win, when the game is a tie nothing changes, to keep it more interesting there is a round count, it can be used as a marketing or advertisement tool to get clients attention and entertain them while explotring other prodcuts.
+
 
 # User Story:
 **as a user:**
@@ -24,23 +25,27 @@ The wireframes designed by Balsamiq tool, [link to wireframes!](wireframes/wiref
 ## Existing Features:
 * Navigation menu bar that linked to different sections in the website.
 * The menu bar will switch to a button that collapse in the mobile and tablet version.
-* documentation about the game and how to play it.
-* ability to play the game and the round and winning score change every time played.
+* Documentation about the game and how to play it.
+* Ability to play the game and the round and winning score change every time played.
 * ability to send an email to talk about the game experience or report a problem.
-* responsive device that can be used on any device.
+* Responsive device that can be used on any device.
+
+## Future Features:
+* Ability to make two users play against each others using different devices.
+* keep the winning score records for users as in history.
 
 # Technology Used:
-**Languages**:HTML5, CSS3, Javascript.
-**Frameworks**: Bootstrap.
-**Font Awesome**: The Footer icons.
-**Balsamiq**:Designed the wireframes.
-**VSCode**: This whole project code written using VScode.
-**Github**: The whole project commited and pushed to github repository and published on Github pages.
-**JS Email**: Used with the contact form. 
+* **Languages**:HTML5, CSS3, Javascript.
+* **Frameworks**: Bootstrap.
+* **Font Awesome**: The Footer icons.
+* **Balsamiq**:Designed the wireframes.
+* **VSCode**: This whole project code written using VScode.
+* **Github**: The whole project commited and pushed to github repository and published on Github pages.
+* **JS Email**: Used with the contact form. 
 
 # Testing:
 ## Unit Testing:
-the project has been tested by jasmine tool, [link to the test results](test/test.html)
+the project has been tested by jasmine tool, [link to the test results](https://besheraj.github.io/milestone2/test/test.html)
 * if computer chose "rock" and user chose "scissors" it returns "The Computer Won"
 * if computer chose "paper" and user chose "rock" it returns "The Computer Won"
 * if computer chose "scissors" and user chose "paper" it returns "The Computer Won"
@@ -64,9 +69,9 @@ the project has been tested by jasmine tool, [link to the test results](test/tes
 * check a choice from the user choice and click on play the game and the computer choice will be auto generated and the summary will show the winner and the winner score will be updated.
 * click on play again and the round count will be increased by one as the winner score will be increased too.
 * if the game is tie both computer and user score will stay the same.
-### how to play section testing:
+### How to play section testing:
 * if you scroll down you will see the how to play section.
-### form testing:
+### Form testing:
 * if you scroll down more you will see the contact form section.
 * if you enter your name and click on "send now" you will be asked to fill in your email address field.
 * if you enter your email and click on "send now" you will be asked to fill in your name field.
@@ -78,7 +83,7 @@ the project has been tested by jasmine tool, [link to the test results](test/tes
 * if you enter your name, email and message and click on "send now", and some how there is an error with the server you will get an alert "FAILED... please try again later!".
 * onec the form completetd and the alert "Your message has been sent." pop up the developer will receive an email with the the form details as follows:
 ![email test](assets/images/email-sample.png)
-### footer testing:
+### Footer testing:
 * the bottom of the page there is a footer with links to social media website in a new tab.
 *  if you click on the facebook icon it will direct you to the facebook website in a new tab.
 *  if you click on the twitter icon it will direct you to the twitter website in a new tab.
