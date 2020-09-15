@@ -1,55 +1,139 @@
-# Interactive Frontend Development Milestone "Rock Paper Scissors" Project:
-Rock Paper Scissors project is game developed to entertain users and have great expeience with round and winning score counting, the game developed for one user to select a choice against the computer version.
-this project could be used to entertain users, promoting or ads, the design is fully responsive and works on every mobile tablet or desktop.
+# Interactive Frontend Development Milestone 2 "Rock Paper Scissors" Project:
+Rock Paper Scissors project is popular and old game created to entertain users playing against the computer, both user and computer score will increase when one of them win, when the game is a tie nothing changes, to keep it more interesting there is a round count.
 
-# UX
+# User Story:
 **as a user:**
 
-ability to play the game with the computer.
-counting the winning score for both user and computer.
-counting rounds of each time you play.
-ability to learn about the game.
-email form to send a message or report a problem.
+* ability to play rock paper scissors with the computer.
+* the winner will get one point in each round.
+* counting rounds of each time you play.
+* ability to learn about the game.
+* email form to learn more about user experience or to report any problems with the game.
+* resposive website that can be used on any smart phone tablet or desktop device.
+
+**as a website developer:**
+* learning more about users throw an email form.
+* teach users how to play the game.
+* new experience for users to count winning times.
 
 
 ## Wireframes:
-The wireframes designed by Balsamiq tool, link to wireframes!
+The wireframes designed by Balsamiq tool, [link to wireframes!](wireframes/wireframes.pdf)
 
 # Features:
 ## Existing Features:
-Navigation menu bar that linked to different sections in the website.
-The menu bar will switch to a button that collapse in the mobile and tablet version.
-Sticky menu bar with the logo while surfing the whole page.
-documentation about the game and how to play it.
-ability to play the game and the round and winning score change every time played.
-ability to send an email to talk about the game experience or report a problem
+* Navigation menu bar that linked to different sections in the website.
+* The menu bar will switch to a button that collapse in the mobile and tablet version.
+* documentation about the game and how to play it.
+* ability to play the game and the round and winning score change every time played.
+* ability to send an email to talk about the game experience or report a problem.
+* responsive device that can be used on any device.
 
 # Technology Used:
-## Languages:
-HTML5, CSS3, Javascript
-
-## Frameworks:
-Bootstrap:
-The responsive griding design.
-Collapse button for menu bar in mobile version.
-## Balsamiq:
-Designed the wireframes.
-
-## VSCode:
-This whole project code written using VScode.
-
-## Github:
-The whole project commited and pushed to github repository and published on Github pages.
-
+**Languages**:HTML5, CSS3, Javascript.
+**Frameworks**: Bootstrap.
+**Font Awesome**: The Footer icons.
+**Balsamiq**:Designed the wireframes.
+**VSCode**: This whole project code written using VScode.
+**Github**: The whole project commited and pushed to github repository and published on Github pages.
+**JS Email**: Used with the contact form. 
 
 # Testing:
-..
+## Unit Testing:
+the project has been tested by jasmine tool, [link to the test results](test/test.html)
+* if computer chose "rock" and user chose "scissors" it returns "The Computer Won"
+* if computer chose "paper" and user chose "rock" it returns "The Computer Won"
+* if computer chose "scissors" and user chose "paper" it returns "The Computer Won"
+* if computer chose "scissors" and user chose "rock" it returns "You Won"
+* if computer chose "rock" and user chose "paper" it returns "You Won"
+* if computer chose "paper" and user chose "scissors" it returns "You Won"
+* if computer chose "scissors" and user chose "scissors" it returns "The Game is a tie"
+* if computer chose "rock" and user chose "rock" it returns "The Game is a tie"
+* if computer chose "paper" and user chose "paper" it returns "The Game is a tie"
+* if the user chose other than "rock" "paper" "scissors" will return console log "error" (but thats not possible because the user will check one of three options)
+* if the computer win the computer score will increase by one.
+* if the user win the user score will increase by one.
+* every time the game played the round count will advance by one.
+## UI Testing:
+### Nav bar  testing:
+* ability to use the button at the top to expand the nav bar in mobile and tablet version.
+* click on "Play now" will direct you to the game section.
+* click on "how to play" will direct you to how to play section.
+* click on "help" will direct you to the contact form section.
+### Game testing:
+* check a choice from the user choice and click on play the game and the computer choice will be auto generated and the summary will show the winner and the winner score will be updated.
+* click on play again and the round count will be increased by one as the winner score will be increased too.
+* if the game is tie both computer and user score will stay the same.
+### how to play section testing:
+* if you scroll down you will see the how to play section.
+### form testing:
+* if you scroll down more you will see the contact form section.
+* if you enter your name and click on "send now" you will be asked to fill in your email address field.
+* if you enter your email and click on "send now" you will be asked to fill in your name field.
+* if you enter your message and click on "send now" you will be asked to fill in your name field.
+* if you enter your name and email and click on "send now" you will be asked to fill in your message field.
+* if you enter your name and message and click on "send now" you will be asked to fill in your email address field.
+* if you enter your email and message and click on "send now" you will be asked to fill in your name field.
+* if you enter your name, email and message and click on "send now" you will get an alert "Your message has been sent.".
+* if you enter your name, email and message and click on "send now", and some how there is an error with the server you will get an alert "FAILED... please try again later!".
+* onec the form completetd and the alert "Your message has been sent." pop up the developer will receive an email with the the form details as follows:
+![email test](assets/images/email-sample.png)
+### footer testing:
+* the bottom of the page there is a footer with links to social media website in a new tab.
+*  if you click on the facebook icon it will direct you to the facebook website in a new tab.
+*  if you click on the twitter icon it will direct you to the twitter website in a new tab.
+*  if you click on the instagram icon it will direct you to the instagram website in a new tab.
+*  if you click on the youtube icon it will direct you to the youtube website in a new tab. 
+### Responsive
+The design was tested using chrome devtools for the following devices:
+* Responsive.
+* Moto G4.
+* Galaxy S5.
+* Pixel 2.
+* Pixel 2 XL.
+* Iphone 5/SE.
+* Iphone 6/7/8.
+* Iphone 6/7/8 Plus.
+* Iphone X .
+* Ipad.
+* Galaxy Fold.
+* Surface Duo.
+### W3 Schools Testing:
+* HTML code passed by w3 schools html validator without errors.
+* CSS code passed by w3 schools CSS jigsaw without errors.
 
-# Responsive
-The design was tested on the following devices: Desktop Laptop Iphone 6/7/8 Galaxy Fold Iphone 5/SE Galaxy S5 Pixel 2 Pixel 2 XL Iphone 6/7/8 plus Iphone X IPad pro Surface Duo
+#### Issues to be fixed:
+* responsivness on Ipad Pro (navbar).
 
 # Deployment
-The site was deployed to GitHub pages by following the below steps: Log in to the repository - https://github.com/besheraj/milestone2 Click Settings Scroll down to GitHub Pages Set Source to Branch:master Click Save
+
+## GitHub Pages
+The [live version](https://besheraj.github.io/milestone2/) of this site is hosted using Github Pages.
+To deploy Off "Rock Paper Scissors" from its GitHub repository, follow the below steps:
+1. Log in to Github.
+2. Select https://github.com/besheraj/milestone2.
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source click the drop-down menu labelled None and select Master Branch.
+6. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+
+## Locally
+To run this project locally, follow the below steps:
+To clone this project from GitHub:
+
+1. Click the link to the Off The Beaten Track repository.
+2. Under the repository name, click Code button.
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type git clone and then paste the URL you copied in Step 3.
+git clone https://github.com/besheraj/milestone2.git
+Press Enter. Your local clone will be created.
+7. To remove the origin link from your IDE type git remote rm origin.
+
+**Alternatively** you can download the ZIP folder of this project by clicking the Code button (as you did in step 2) and selecting Download ZIP It can then be unpacked into your desired location
+Open the index.html file to run the project locally Further reading and troubleshooting on cloning a repository from GitHub here.
 
 # Credits
-background image downloaded from https://www.vecteezy.com
+* Background image downloaded from https://www.vecteezy.com.

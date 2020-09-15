@@ -12,5 +12,5 @@ emailjs.send('gmail', 'template_besheraj', templateParams)
        document.getElementById("msg").value=""
        document.getElementById("emailaddress").value=""
     }, function(error) {
-       console.log('FAILED...', error);
+        alert('FAILED... please try again later!');
     }); return false; }
