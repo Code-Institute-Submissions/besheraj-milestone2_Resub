@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Rock Paper Scissor</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function() {
             emailjs.init("user_xm47l1ExyXOanCyGgbOhU");
         })();
@@ -61,12 +61,12 @@
             </div>
             <div class="row">
                 <div class="computer-choice-box center col">
-                    <h3 class="user-choice-heading">Computer Choice:</h3>
+                    <h3 class="choice-heading">Computer Choice:</h3>
                     <p id="computer-choice"> ? </p>
                 </div>
                 <div class="user-choice center col">
                     <form>
-                        <label class="user-choice-heading">
+                        <label class="choice-heading">
                             Your Choices:
                         </label>
 
@@ -88,7 +88,7 @@
                                 Scissors
                             </label>
                         </div>
-                        <button class="play-button btn btn-success" type="button" onclick="playGame()">play</button>
+                        <button class="play-button btn btn-secondary" type="button" onclick="playGame()">play</button>
                     </form>
                 </div>
 
@@ -104,17 +104,17 @@
 
         </div>
         <div class="row ">
-            <div class="col results center">
-                <p class="score-label">Summary: <br> <span id="result"></span></p>
+            <div class="col results-box center">
+                <p class="Summary">Summary: <br> <span id="result"></span></p>
             </div>
         </div>
     </section>
     <!-- how to play section  -->
-    <section class="container-fluid how-to">
+    <section class="container-fluid how-to-container">
         <div class="no-gutters">
             <div class="row">
-                <div class="col">
-                    <h2 class="center how-to-heading" id="how-to">How To Play</h2>
+                <div class="col how-to-heading">
+                    <h2 class="center" id="how-to">How To Play</h2>
                 </div>
                 <article>
                     <h3>Why is Rock Paper Scissors played?</h3>

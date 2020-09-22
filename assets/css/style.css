@@ -9,6 +9,7 @@ html {
 
 body {
     font-family: 'Grandstander', Times, serif
+    
 }
 
 header {
@@ -24,15 +25,15 @@ header {
 
 .logo h1 {
     font-weight: 500;
-    color: #312f2f;
+    color: #43400c;
     font-size: 2rem;
     font-family: 'Press Start 2P', Times, serif;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
 header span {
     font-size: 17px;
-    color: #312f2f;
+    color: #43400c;
     font-weight: 600;
     padding: 0;
     margin: 0;
@@ -54,7 +55,11 @@ header span:hover {
 /* Game Styling */
 
 .game-played {
-    background-color: #F6EEF6;
+    background-image: url(../images/background.jpg) ;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .computer-choice-box {
@@ -73,31 +78,31 @@ header span:hover {
 
 .game-heading {
     text-align: center;
-    font-weight: 900;
-    color: #2b2623;
+    font-weight: 700;
+    color: #1a2122;
     padding-top: 50px;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
 }
 
 .round-heading {
     text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     color: #2b2623;
     padding: 40px;
     text-decoration: underline;
 }
 
-.user-choice-heading {
+.choice-heading {
     margin: 15px 0;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.5rem;
-    color: #181410;
+    color: #3a3633;
 }
 
 .choices {
     margin: 10px 0;
     font-weight: 500;
-    color: #181410;
+    color: #2e2823;
 }
 
 .play-button {
@@ -116,7 +121,7 @@ header span:hover {
     text-transform: capitalize;
 }
 
-.results {
+.results-box {
     text-align: center;
     border: 1px #FFFFFF inset;
     border-radius: 10px;
@@ -124,20 +129,21 @@ header span:hover {
     color: #181410;
 }
 
-.summary {
-    color: #1f1f1f;
-}
 
-.score-label {
-    font-weight: bold;
-    font-size: 1.5rem;
+.Summary {
+    font-weight: 500;
+    font-size: 1.8rem;
     color: #181410;
+}
+#result{
+    text-decoration: underline;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .score {
-    font-weight: bold;
-    color: #181410;
-    text-decoration: underline;
+    font-weight: 500;
+    color: #161411;
 }
 
 .center {
@@ -147,29 +153,59 @@ header span:hover {
 
 /* how to play  */
 
-.how-to {
-    background-color: #F5ECDC;
+.how-to-container {
+    position: relative;
+    background: #696969;
+    overflow: hidden;
     padding: 100px 20px;
+    text-shadow:  0px 2px rgb(51, 47, 47)
+
+}
+.how-to-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url(../images/background-how.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+
 }
 
 .how-to-heading {
-    color: #513117;
+    color: #ffffff;
     padding: 10px;
+    z-index: 3;
 }
-
-.how-to h3 {
+.how-to-container article {
+    z-index: 3;
+}
+.how-to-container h3 {
     padding: 20px;
-    color: #513117;
+    color: #fafafa;
+
 }
 
-.how-to p {
+.how-to-container p {
     padding: 20px;
-    color: #513117;
+    color: #fafafa;
+
 }
 
-.how-to li {
+.how-to-container li {
     padding-left: 20px;
-    color: #513117;
+    color: #fafafa;
+
 }
 
 
@@ -182,19 +218,22 @@ header span:hover {
 .contact-form {
     padding: 120px 20px;
     text-align: center;
-    background-color: #F6F6EB;
-    color: #512b0c;
+        background-image: url(../images/background-form.jpg) ;
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+    color: #331a05;
 }
 
 .contact-form h4 {
     padding: 15px;
-    color: #512b0c;
+    color: #331a05;
 }
 
 .contact-form button {
     margin-top: 25px;
     background-color: #43400c;
-    color: FFFFFF;
+    color: #FFFFFF;
 }
 
 .form-control {
@@ -227,7 +266,7 @@ hr {
     font-size: 30px;
     line-height: 7px;
     text-align: center;
-    color: #312f2f;
+    color: #43400c;
 }
 
 .social li a i:hover {
