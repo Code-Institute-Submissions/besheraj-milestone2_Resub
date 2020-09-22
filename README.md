@@ -151,4 +151,4 @@ Press Enter. Your local clone will be created.
 Open the index.html file to run the project locally Further reading and troubleshooting on cloning a repository from GitHub here.
 
 # Credits
-* I got the inspiration for this project by Code academy. 
+All the photos in this project downloaded from "https://hipwallpaper.com/"
