@@ -137,7 +137,7 @@ To deploy Off "Rock Paper Scissors" from its GitHub repository, follow the below
 To run this project locally, follow the below steps:
 To clone this project from GitHub:
 
-1. Click the link to the Off The Beaten Track repository.
+1. Click the link to the Off MileStone 2 repository.
 2. Under the repository name, click Code button.
 3. In the Clone with HTTPs section, copy the clone URL for the repository.
 4. In your local IDE open Git Bash.
