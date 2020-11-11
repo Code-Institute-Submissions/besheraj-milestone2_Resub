@@ -78,8 +78,12 @@ const updateScore = (winner) => {
 //when game played selecting user choice then generate computer choice determine
 // the winner update the score for winner and advance by one round //
 const playGame = () => {
-  const userChoice = document.querySelector('input[name="choices"]:checked')
-    .value;
+  const selectedGame = document.querySelector('input[name="choices"]:checked')
+  if (!selectedGame) {
+    alert("Please select a game!");
+    return false;
+  }
+  const userChoice = selectedGame.value;
   const computerChoice = getComputerChoice();
   const winner = determineWinner(userChoice, computerChoice);
   let scores = updateScore(winner);
