@@ -7,13 +7,21 @@ function sendMail() {
 
   emailjs.send("gmail", "template_besheraj", templateParams).then(
     function (response) {
-      alert("Your message has been sent.");
+      $.alert({
+        title: "Success!",
+        content: "Your message has been sent!",
+        type: "green",
+      });
       document.getElementById("name").value = "";
       document.getElementById("msg").value = "";
       document.getElementById("emailaddress").value = "";
     },
     function (error) {
-      alert("FAILED... please try again later!");
+      $.alert({
+        title: "Error!",
+        content: "Something went wrong!... please try again later!",
+        type: "red",
+      });
     }
   );
   return false;
