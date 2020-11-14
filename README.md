@@ -91,7 +91,7 @@ The project has been tested by jasmine tool, [link to the test results](https://
 * If you enter your email and message and click on "send now" you will be asked to fill in your name field.
 * If you enter your name, email and message and click on "send now" you will get an alert "Your message has been sent.".
 * If you enter your name, email and message and click on "send now", and some how there is an error with the server you will get an alert "FAILED... please try again later!".
-* Onec the form completetd and the alert "Your message has been sent." pop up the developer will receive an email with the the form details as follows:
+* Once the form completetd and the alert "Your message has been sent." pop up the developer will receive an email with the the form details as follows:
 ![email test](assets/images/email-sample.png)
 ### Footer testing:
 * The bottom of the page there is a footer with links to social media website in a new tab.

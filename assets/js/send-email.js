@@ -7,15 +7,11 @@ function sendMail() {
 
   emailjs.send("gmail", "template_besheraj", templateParams).then(
     function (response) {
-      $.alert({
-        title: "Success!",
-        content: "Your message has been sent!",
-        type: "green",
-      });
+      alert('Your message has been sent!');
+      window.location = '#playnow';
       document.getElementById("name").value = "";
       document.getElementById("msg").value = "";
       document.getElementById("emailaddress").value = "";
-      setTimeout(function(){window.location.href="#playnow"},3000);
     },
     function (error) {
       $.alert({
@@ -25,5 +21,6 @@ function sendMail() {
       });
     }
   );
+  // setTimeout(function(){document.location = "#playnow"},5000);
   return false;
 }
