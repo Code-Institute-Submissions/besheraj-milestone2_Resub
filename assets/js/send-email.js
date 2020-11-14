@@ -15,7 +15,7 @@ function sendMail() {
       document.getElementById("name").value = "";
       document.getElementById("msg").value = "";
       document.getElementById("emailaddress").value = "";
-      setTimeout(function(){location.href="#playnow"},5000);
+      setTimeout(function(){window.location.href="#playnow"},5000);
     },
     function (error) {
       $.alert({
